@@ -1,0 +1,1 @@
+{"success":true,"pokemon":{"id":82,"nombre":"Magneton","imagen":"https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/other\/official-artwork\/82.png","tipos":["electric","steel"],"altura":1,"peso":60,"habilidades":[{"nombre":"Magnet pull","oculta":false},{"nombre":"Sturdy","oculta":false},{"nombre":"Analytic","oculta":true}],"descripcion":""}}

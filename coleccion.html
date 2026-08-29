@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Mi colección | PokéMarket</title>
+
+    <link
+        rel="stylesheet"
+        href="assets/css/base.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/catalogo.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/coleccion.css">
+
+</head>
+
+<body class="catalog-page">
+
+<header class="catalog-header">
+
+    <div class="brand">
+
+        <div class="brand-ball"></div>
+
+        <div class="brand-name">
+
+            <span class="brand-poke">Poké</span><span class="brand-market">Market</span>
+
+        </div>
+
+    </div>
+
+    <nav class="catalog-nav">
+
+        <a href="index.html">
+            Catálogo
+        </a>
+
+        <a
+            href="coleccion.html"
+            class="active">
+            Mi colección
+        </a>
+
+    </nav>
+
+
+</header>
+
+
+<main class="collection-container">
+
+    <section class="collection-heading">
+
+        <div>
+
+            <h1>
+                Mi colección
+            </h1>
+
+            <p>
+                Has guardado
+                <strong id="totalColeccion">
+                    0
+                </strong>
+                Pokémon
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div
+        id="collectionGrid"
+        class="collection-grid">
+
+        <div class="loading">
+            Cargando tu colección...
+        </div>
+
+    </div>
+
+</main>
+
+
+<div
+    id="pokemonModal"
+    class="pokemon-modal">
+
+    <div class="modal-backdrop"></div>
+
+    <section class="pokemon-detail">
+
+        <button
+            id="cerrarModal"
+            class="modal-close"
+            type="button">
+            ×
+        </button>
+
+        <div class="detail-image-area">
+
+            <img
+                id="detalleImagen"
+                src=""
+                alt="">
+
+        </div>
+
+        <div class="detail-info">
+
+            <span
+                id="detalleNumero"
+                class="detail-number">
+            </span>
+
+            <h2 id="detalleNombre"></h2>
+
+            <div
+                id="detalleTipos"
+                class="detail-types">
+            </div>
+
+            <p
+                id="detalleDescripcion"
+                class="detail-description">
+            </p>
+
+            <div class="detail-stats">
+
+                <div class="detail-stat">
+
+                    <span>
+                        Altura
+                    </span>
+
+                    <strong id="detalleAltura">
+                    </strong>
+
+                </div>
+
+                <div class="detail-stat">
+
+                    <span>
+                        Peso
+                    </span>
+
+                    <strong id="detallePeso">
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <h3>
+                Habilidades
+            </h3>
+
+            <div
+                id="detalleHabilidades"
+                class="detail-abilities">
+            </div>
+
+            <div class="collection-saved">
+
+                ✓ Guardado en tu colección
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="assets/js/coleccion.js"></script>
+
+</body>
+
+</html>

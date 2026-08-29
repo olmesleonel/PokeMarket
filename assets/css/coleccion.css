@@ -1,0 +1,353 @@
+.collection-container {
+    width:
+        min(
+            1370px,
+            calc(100% - 100px)
+        );
+
+    margin:
+        0 auto;
+
+    padding:
+        55px 0 80px;
+}
+
+.collection-heading {
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        38px;
+}
+
+.collection-heading h1 {
+    font-size:
+        46px;
+
+    letter-spacing:
+        -1.5px;
+}
+
+.collection-heading p {
+    margin-top:
+        10px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        16px;
+}
+
+.collection-heading p strong {
+    color:
+        var(--yellow);
+}
+
+.collection-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        22px;
+}
+
+.collection-card {
+    min-height:
+        390px;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    padding:
+        20px;
+
+    border-radius:
+        18px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--panel);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.collection-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(255, 255, 255, 0.20);
+
+    box-shadow:
+        0 25px 55px
+        rgba(0, 0, 0, 0.30);
+}
+
+.collection-card::before {
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        230px;
+
+    height:
+        230px;
+
+    right:
+        -60px;
+
+    top:
+        40px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(
+            --pokemon-glow,
+            rgba(255, 255, 255, 0.05)
+        );
+
+    filter:
+        blur(32px);
+
+    opacity:
+        0.42;
+}
+
+.collection-card-header {
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    position:
+        relative;
+
+    z-index:
+        2;
+}
+
+.collection-card-header strong {
+    font-size:
+        18px;
+}
+
+.collection-card-header span {
+    color:
+        var(--muted);
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+}
+
+.collection-image {
+    height:
+        220px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    position:
+        relative;
+
+    z-index:
+        2;
+}
+
+.collection-image img {
+    width:
+        210px;
+
+    height:
+        210px;
+
+    object-fit:
+        contain;
+
+    transition:
+        transform 0.25s ease;
+
+    image-rendering: pixelated;
+}
+
+.collection-card:hover
+.collection-image img {
+    transform:
+        scale(1.06);
+}
+
+.collection-actions {
+    margin-top:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 0.72fr;
+
+    gap:
+        10px;
+
+    position:
+        relative;
+
+    z-index:
+        2;
+}
+
+.btn-remove {
+    height:
+        42px;
+
+    border-radius:
+        9px;
+
+    cursor:
+        pointer;
+
+    background:
+        rgba(239, 62, 70, 0.08);
+
+    color:
+        var(--red);
+
+    border:
+        1px solid
+        rgba(239, 62, 70, 0.20);
+
+    font-weight:
+        600;
+}
+
+.btn-remove:hover {
+    background:
+        rgba(239, 62, 70, 0.16);
+}
+
+.empty-collection {
+    grid-column:
+        1 / -1;
+
+    padding:
+        100px 30px;
+
+    text-align:
+        center;
+
+    border-radius:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        rgba(255, 255, 255, 0.02);
+}
+
+.empty-collection h2 {
+    font-size:
+        27px;
+}
+
+.empty-collection p {
+    margin-top:
+        10px;
+
+    color:
+        var(--muted);
+}
+
+.empty-collection a {
+    display:
+        inline-block;
+
+    margin-top:
+        25px;
+
+    padding:
+        13px 24px;
+
+    border-radius:
+        9px;
+
+    text-decoration:
+        none;
+
+    color:
+        white;
+
+    background:
+        var(--red);
+}
+
+.collection-saved {
+    width:
+        100%;
+
+    margin-top:
+        25px;
+
+    padding:
+        15px;
+
+    text-align:
+        center;
+
+    border-radius:
+        11px;
+
+    border:
+        1px solid
+        rgba(53, 196, 106, 0.35);
+
+    background:
+        rgba(53, 196, 106, 0.10);
+
+    color:
+        #83e9a4;
+
+    font-weight:
+        700;
+}

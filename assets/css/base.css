@@ -1,0 +1,121 @@
+:root {
+    --bg: #080d18;
+    --bg-soft: #0d1422;
+    --panel: #121b2b;
+    --panel-soft: #172133;
+
+    --red: #ef3e46;
+    --red-hover: #ff5058;
+    --yellow: #f4c542;
+
+    --white: #f8fafc;
+    --text: #d7dde7;
+    --muted: #8f9bad;
+
+    --border: rgba(255, 255, 255, 0.10);
+    --border-strong: rgba(255, 255, 255, 0.17);
+
+    --success: #35c46a;
+    --danger: #ff5a64;
+
+    --radius-lg: 28px;
+    --radius-md: 16px;
+    --radius-sm: 10px;
+
+    --shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: var(--bg);
+    color: var(--white);
+    min-height: 100vh;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    border: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 31px;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+}
+
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    letter-spacing: -0.8px;
+}
+
+.brand-poke {
+    color: var(--white);
+}
+
+.brand-market {
+    color: var(--red);
+}
+
+.brand-ball {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--red) 0%,
+            var(--red) 44%,
+            #101827 44%,
+            #101827 56%,
+            white 56%,
+            white 100%
+        );
+
+    border: 5px solid var(--white);
+    position: relative;
+}
+
+.brand-ball::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--bg);
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

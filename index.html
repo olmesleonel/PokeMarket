@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéMarket</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+</head>
+
+<body class="catalog-page">
+
+<header class="catalog-header">
+    <div class="brand">
+        <div class="brand-ball"></div>
+        <div class="brand-name">
+            <span class="brand-poke">Poké</span><span class="brand-market">Market</span>
+        </div>
+    </div>
+
+    <nav class="catalog-nav">
+        <a href="catalogo.html" class="active">Catálogo</a>
+        <a href="coleccion.html">Mi colección</a>
+    </nav>
+</header>
+
+<main class="catalog-container">
+    <section class="catalog-intro">
+        <div>
+            <h1>Explora el mundo <strong>Pokémon</strong></h1>
+            <p>Descubre diferentes Pokémon y construye tu propia colección.</p>
+        </div>
+
+        <div class="catalog-count">
+            <span>Pokémon disponibles</span>
+            <strong id="totalPokemon">...</strong>
+        </div>
+    </section>
+
+    <section class="catalog-tools">
+        <div class="pokemon-search">
+            <input
+                id="buscarPokemon"
+                type="text"
+                placeholder="Buscar Pokémon por nombre o número..."
+                autocomplete="off">
+            <button id="botonBuscar" type="button">Buscar</button>
+        </div>
+
+        <button id="limpiarBusqueda" class="clear-search" type="button">Ver todos</button>
+    </section>
+
+    <section>
+        <div id="pokemonGrid" class="pokemon-grid">
+            <div class="loading">Cargando Pokémon...</div>
+        </div>
+
+        <div class="load-more-container">
+            <button id="cargarMas" class="load-more-button" type="button">Cargar más Pokémon</button>
+        </div>
+    </section>
+</main>
+
+<div id="pokemonModal" class="pokemon-modal">
+    <div class="modal-backdrop"></div>
+    <section class="pokemon-detail">
+        <button id="cerrarModal" class="modal-close" type="button">×</button>
+
+        <div class="detail-image-area">
+            <img id="detalleImagen" class="detail-image" src="" alt="">
+        </div>
+
+        <div class="detail-info">
+            <span id="detalleNumero" class="detail-number"></span>
+            <h2 id="detalleNombre"></h2>
+            <div id="detalleTipos" class="detail-types"></div>
+            <p id="detalleDescripcion" class="detail-description"></p>
+
+            <div class="detail-stats">
+                <div class="detail-stat">
+                    <span>Altura</span>
+                    <strong id="detalleAltura"></strong>
+                </div>
+                <div class="detail-stat">
+                    <span>Peso</span>
+                    <strong id="detallePeso"></strong>
+                </div>
+            </div>
+
+            <h3>Habilidades</h3>
+            <div id="detalleHabilidades" class="detail-abilities"></div>
+
+            <button id="modalColeccion" class="detail-collection-button" type="button">
+                + Agregar a mi colección
+            </button>
+        </div>
+    </section>
+</div>
+
+<script src="assets/js/catalogo.js"></script>
+</body>
+</html>
